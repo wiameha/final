@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            cd Predictive-Maintenance
+            cd /Users/wiame/Desktop/Predictive-Maintenance-main
             git pull origin main
             docker rm -f $(docker ps -aq)
             docker rmi -f $(docker images -aq)
